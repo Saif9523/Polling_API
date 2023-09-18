@@ -15,13 +15,45 @@
   <li> View a question with all of its options </li>
 </ul>
 
-<h1> Required Routes </h1>
-<li> /questions/create (To create a question) </li>
-<li> /questions/:id/options/create (To add options to a specific question) </li>
-<li> /questions/:id/delete (To delete a question) </li>
-<li> /options/:id/delete (To delete an option) </li>
-<li> /options/:id/add_vote (To increment the count of votes) </li>
-<li> /questions/:id (To view a question and it’s options) </li?
+# API Endpoints
+
+<table>
+  <tr>
+    <th> HTTP Verbs	 </th>
+    <th> Endpoints	</th>
+    <th> Action </th>
+  </tr>
+  <tr>
+    <td> POST	</td>
+    <td> /questions/create	</td>
+    <td>To create a question </td>
+  </tr>
+  <tr>
+    <td> POST </td>
+    <td> /questions/:id/options/create	</td>
+    <td>To add options to a specific question </td>
+  </tr>
+  <tr>
+    <td> DELETE	 </td>
+    <td> /questions/:id/delete		</td>
+    <td> To delete a question </td>
+  </tr>
+  <tr>
+    <td> DELETE </td>
+    <td> /options/:id/delete		</td>
+    <td> To delete an option </td>
+  </tr>
+  <tr>
+    <td> Get </td>
+    <td> /options/:id/add_vote	</td>
+    <td> To increase the count of votes </td>
+  </tr>
+  <tr>
+    <td> Get </td>
+    <td> /questions/:id		</td>
+    <td> To view a question and its options </td>
+  </tr>
+</table>
 
 <h1> Usage </h1>
 <ul>
@@ -29,27 +61,6 @@
   <li> Connect to the API using Postman on port 8000. </li>
 </ul>
 
-<h1> Folder Structure </h1>
-
-CSV_Upload/
-|── |config/
-│   |      ├── mongoose.js
-|   |
-├── routes/
-│   |      ├── api/V1/
-│   ├── index.js
-|   |
-├── controllers/
-│   ├── OptionsController.js
-│   ├── QuestionsController.js
-|   |
-├── models/
-│   ├── options.js
-│   ├── questions.js
-|   |
-├── package-lock.json
-├── package.json
-├── README.md
 
 # Teach Stack
 <ul>
